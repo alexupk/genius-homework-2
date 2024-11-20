@@ -49,9 +49,20 @@ body{
     line-height: normal;
     font-weight: 400;
 }
-
 ul {
     list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+a {
+    display: inline-block;
 }
 /* для заголовків секцій та акцентів */
 .secondary_title{
@@ -64,13 +75,30 @@ ul {
 }
 
 /* header */
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 240px;
+}
+.header-menu{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
 .header-nav-link{
     color: var(--primary-color-blue-dark);
     text-decoration: none;
 }
 .header-nav-link:hover{
-    font-weight: 700;
+    /* font-weight: 700;  *//* стрибає при наведенні */
     color: var(--primary-color-blue);
+}
+.header-icons{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 56px;
 }
 
 /* hero-section */
@@ -101,6 +129,10 @@ ul {
 }
 
 /* about-section */
+.about-container{
+    display: flex;
+    gap: 32px;
+}
 .accent-capitalize{
     text-transform: capitalize;
 }
@@ -114,6 +146,17 @@ ul {
 }
 
 /* why-section */
+.why-list{
+    display: flex;
+    gap: 56px;
+}
+.why-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
 .why-section-title{
     text-align: center;
 }

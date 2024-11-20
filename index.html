@@ -8,14 +8,14 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="header-nav">
         <a href="./index.html">
           <img
             src="./images/logo.svg"
             alt="Логотип кометологічной клінікі Beauty zone"
           />
         </a>
-        <ul>
+        <ul class="header-menu">
           <li><a class="header-nav-link" href="#about-section">Про нас</a></li>
           <li><a class="header-nav-link" href="#why-section">Чому ми</a></li>
           <li>
@@ -27,7 +27,7 @@
             <a class="header-nav-link" href="#contact-section">Контакти</a>
           </li>
         </ul>
-        <ul>
+        <ul class="header-icons">
           <li>
             <a href="#">
               <svg width="32" height="32">
@@ -64,38 +64,44 @@
       </section>
       <!-- section 2 -->
       <section id="about-section">
-        <h2 class="secondary_title">
-          Перевтілюйтесь в
-          <span class="accent accent-capitalize">beauty zone!</span>
-        </h2>
-        <div class="about-section-text">
-          <p>
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p>
-            B <span class="accent">Beauty zone</span> ми гарантуємо найвищі
-            стандарти якості та приємний сервіс. Наші косметологічні процедури
-            та препарати допоможуть вам підтримувати свою красу та молодість. З
-            нами краса назавжди!
-          </p>
+        <div class="about-container">
+          <div class="about-text">
+            <h2 class="secondary_title">
+              Перевтілюйтесь в
+              <span class="accent accent-capitalize">beauty zone!</span>
+            </h2>
+            <div class="about-section-text">
+              <p>
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p>
+                B <span class="accent">Beauty zone</span> ми гарантуємо найвищі
+                стандарти якості та приємний сервіс. Наші косметологічні
+                процедури та препарати допоможуть вам підтримувати свою красу та
+                молодість. З нами краса назавжди!
+              </p>
+            </div>
+          </div>
+          <div class="about-img">
+            <img
+              src="./images/woman_before_procedure.jpg"
+              alt="Обличчя жінки до косметологічної процедури"
+            />
+            <img
+              src="./images/woman_after_procedure.jpg"
+              alt="Обличчя жінки після косметологічної процедури"
+            />
+          </div>
         </div>
-        <img
-          src="./images/woman_before_procedure.jpg"
-          alt="Обличчя жінки до косметологічної процедури"
-        />
-        <img
-          src="./images/woman_after_procedure.jpg"
-          alt="Обличчя жінки після косметологічної процедури"
-        />
       </section>
       <!-- section 3 -->
       <section id="why-section">
         <h2 class="secondary_title why-section-title">
           Чому люди <span class="accent">обирають нас</span>
         </h2>
-        <ul>
-          <li>
+        <ul class="why-list">
+          <li class="why-item">
             <svg width="32" height="32">
               <use href="./images/icons.svg#icon-materials-science"></use>
             </svg>
@@ -104,7 +110,7 @@
               5 років
             </p>
           </li>
-          <li>
+          <li class="why-item">
             <svg width="32" height="32">
               <use href="./images/icons.svg#icon-medicinecosmetics"></use>
             </svg>
@@ -113,7 +119,7 @@
               перевірену часом
             </p>
           </li>
-          <li>
+          <li class="why-item">
             <svg width="32" height="32">
               <use href="./images/icons.svg#icon-crown"></use>
             </svg>
@@ -248,10 +254,10 @@
         >
         <p class="footer-protection">&copy; 2022 Дані захищені</p>
       </address>
-      <img
+      <!-- <img
         src="./images/comedic_features.jpg"
         alt="Зображення декількох косметичних засобів"
-      />
+      /> -->
     </footer>
   </body>
 </html>
