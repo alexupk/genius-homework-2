@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Beauty zone</title>
   </head>
-  <body>
+  <body class="container">
     <header>
       <nav class="header-nav">
         <a href="./index.html">
@@ -54,8 +54,8 @@
     </header>
     <main>
       <!-- section 1 -->
-      <section>
-        <p>Косметологічна клініка</p>
+      <section class="hero-container">
+        <p class="hero-pre-text">Косметологічна клініка</p>
         <h1 class="hero-title">Beauty Zone</h1>
         <button class="hero-button" type="button">Замовити дзвінок</button>
         <p class="hero-text">
@@ -66,7 +66,7 @@
       <section id="about-section">
         <div class="about-container">
           <div class="about-text">
-            <h2 class="secondary_title">
+            <h2 class="secondary_title about-title">
               Перевтілюйтесь в
               <span class="accent accent-capitalize">beauty zone!</span>
             </h2>
@@ -83,12 +83,14 @@
               </p>
             </div>
           </div>
-          <div class="about-img">
+          <div class="about-images">
             <img
+              class="about-image"
               src="./images/woman_before_procedure.jpg"
               alt="Обличчя жінки до косметологічної процедури"
             />
             <img
+              class="about-image"
               src="./images/woman_after_procedure.jpg"
               alt="Обличчя жінки після косметологічної процедури"
             />
@@ -96,10 +98,12 @@
         </div>
       </section>
       <!-- section 3 -->
-      <section id="why-section">
-        <h2 class="secondary_title why-section-title">
-          Чому люди <span class="accent">обирають нас</span>
-        </h2>
+      <section class="why-section" id="why-section">
+        <div class="why-title-flex">
+          <h2 class="secondary_title why-section-title">
+            Чому люди <span class="accent">обирають нас</span>
+          </h2>
+        </div>
         <ul class="why-list">
           <li class="why-item">
             <svg width="32" height="32">
@@ -135,68 +139,94 @@
         <h2 class="secondary_title procedures-section-title">
           Наші <span class="accent">процедури</span>
         </h2>
-        <ul>
-          <li>
-            <article>
-              <img
+        <div class="procedures-container">
+          <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <ul class="procedures-list">
+            <li class="procedures-item">
+              <article class="procedures-article">
+                <!-- <img
                 src="./images/face_masks.jpg"
                 alt="Жінка отримує процедуру накладання маски на обличчя"
-              />
-              <h3 class="procedures-section-article-title">
-                Маски для обличчя
-              </h3>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
+              /> -->
+                <h3 class="procedures-section-article-title">
+                  Маски для обличчя
+                </h3>
+              </article>
+            </li>
+            <li class="procedures-item">
+              <article class="procedures-article">
+                <!-- <img
                 src="./images/injections.jpg"
                 alt="Жінка отримує процедуру ін'єкцій для обличчя"
-              />
-              <h3 class="procedures-section-article-title">
-                Ін'єкції для обличчя
-              </h3>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
+              /> -->
+                <h3 class="procedures-section-article-title">
+                  Ін'єкції для обличчя
+                </h3>
+              </article>
+            </li>
+            <li class="procedures-item">
+              <article class="procedures-article">
+                <!-- <img
                 src="./images/cleansing.jpg"
                 alt="Жінка отримує процедуру очищення обличчя"
-              />
-              <h3 class="procedures-section-article-title">Очищення обличчя</h3>
-            </article>
-          </li>
-        </ul>
+              /> -->
+                <h3 class="procedures-section-article-title">
+                  Очищення обличчя
+                </h3>
+              </article>
+            </li>
+          </ul>
+          <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
       </section>
       <!-- section 5 -->
       <section id="contact-section">
         <h2 class="secondary_title contact-section-title">
           Як нас <span class="accent">знайти</span>
         </h2>
-        <!-- мапа -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9400613933917!2d30.5181289!3d50.4422171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1731574018549!5m2!1suk!2sua"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <!-- форма запису -->
+        <div class="contact-container">
+          <!-- мапа -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9400613933917!2d30.5181289!3d50.4422171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1731574018549!5m2!1suk!2sua"
+            width="605"
+            height="481"
+            style="border: 0; border-radius: 32px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="contact-form">
+            <p class="form-text">
+              Запишіться <span class="accent">безкоштовно</span> та отримайте
+              подарунок
+            </p>
+            <!-- форма запису -->
+          </div>
+        </div>
       </section>
     </main>
     <footer class="fotter">
-      <nav>
-        <a href="./index.html">
-          <img
-            src="./images/logo.svg"
-            alt="Логотип кометологічной клінікі Beauty zone"
-          />
-        </a>
-        <ul>
-          <li><a class="footer-nav-link" href="#about-section">Про нас</a></li>
+      <nav class="fotter-nav">
+        <div class="footer-logo">
+          <a href="./index.html">
+            <img
+              src="./images/logo.svg"
+              alt="Логотип кометологічной клінікі Beauty zone"
+            />
+          </a>
+        </div>
+        <ul class="footer-menu">
+          <li>
+            <a class="footer-nav-link" href="#about-section">Про нас</a>
+          </li>
           <li><a class="footer-nav-link" href="#why-section">Чому ми</a></li>
           <li>
             <a class="footer-nav-link" href="#procedures-section"
@@ -209,7 +239,7 @@
         </ul>
       </nav>
       <address class="address">
-        <ul>
+        <ul class="adress-list">
           <li>
             <a class="footer-nav-link" href="tel:+380960000007"
               >+ 38 (096) 000 00 07</a
@@ -227,32 +257,36 @@
               >Україна, м. Київ, вул. Тараса Шевченка 5</a
             >
           </li>
-          <li>
-            <a href="#">
-              <svg width="32" height="32">
-                <use href="./images/icons.svg#icon-telephone"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg width="32" height="32">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg width="32" height="32">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
+          <div class="address-icons">
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-telephone"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </div>
         </ul>
-        <a class="footer-nav-link" href="#" target="_blank"
-          >Політика конфіденційності</a
-        >
-        <p class="footer-protection">&copy; 2022 Дані захищені</p>
+        <div class="address-info">
+          <a class="footer-nav-link" href="#" target="_blank"
+            >Політика конфіденційності</a
+          >
+          <p class="footer-protection">&copy; 2022 Дані захищені</p>
+        </div>
       </address>
       <!-- <img
         src="./images/comedic_features.jpg"
